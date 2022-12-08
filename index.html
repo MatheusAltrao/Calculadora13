@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+  <title>Calcular 13</title>
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+  <div class="container">
+    <form>
+      <div class="title">
+        <h1>Calcular o 13°</h1>
+      </div>
+      <div class="inputs">
+        <label class="label">
+          <h3> Seu salário:</h3>
+          <input id="money" type="number" placeholder="2000">
+        </label>
+
+        <label class="label">
+          <h3>Meses trabalhados: </h3>
+          <input id="months" type="number" placeholder="11">
+        </label>
+      </div>
+
+
+      <div class="button-area">
+        <button id="calculate">Calcular</button>
+      </div>
+
+      <p id="result"></p>
+
+      <div class="buttondarkmode">
+        <input type="checkbox" class="checkboxdarkmode" id="buttonCheckbox" onchange="darkmode()" />
+        <label class="labeldarkmode" for="chk">
+          <ion-icon class="moon" name="moon-sharp"></ion-icon>
+          <ion-icon class="sun" name="sunny"></ion-icon>
+          <div class="ball"></div>
+        </label>
+      </div>
+
+    </form>
+
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
